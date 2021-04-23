@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend&display=swap);
+
+:root {
+  --background-color: hsl(233, 47%, 7%);
+  --card-background-color: hsl(244, 38%, 16%);
+  --accent-color: hsl(277, 64%, 61%);
+
+  --white-color: hsl(0, 0%, 100%);
+  --main-paragraph-color: hsla(0, 0%, 100%, 0.75);
+  --stat-heading-color: hsla(0, 0%, 100%, 0.6);
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: 'Inter', sans-serif;
+
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background-color: var(--background-color);
+
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem 1.5rem 0;
+
+}
+
