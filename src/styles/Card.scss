@@ -10,16 +10,15 @@ main {
     object-fit: cover;
   
     width: 100%;
-    height: 250px;
-    
-    margin-bottom: 1.6rem;
+    height: 240px;
 
     border-radius: 8px 8px 0px 0px;
 
+    filter: invert(0%) sepia(10%) saturate(5606%) hue-rotate(227deg) brightness(30%) contrast(100%);
   }
 
   .textContainer {
-    padding: 1rem 1rem 0.02rem;
+    padding: 1rem 1rem 0rem;
 
     .title {
       color: var(--white-color);
@@ -69,35 +68,42 @@ main {
           font-size: 0.9rem;
           font-weight: 400;
           text-transform: uppercase;
-  
         }
-  
       }
-
     }
   }
 }
 
 @media (min-width: 500px) {
-  .infoContainer {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-
-    .infos {
-      gap: 0 1rem;
-
-      align-items: flex-start;
-
-      h6 {
-        letter-spacing: 0.06rem;
-        margin-top: 0.6rem;
-
-      }
+  main {
+    img {
+      height: 300px;
 
     }
-  }
 
+    .textContainer {
+      padding-bottom: 1rem;
+  
+      .infoContainer {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+    
+        .infos {
+          gap: 0 1rem;
+    
+          align-items: flex-start;
+    
+          h6 {
+            letter-spacing: 0.06rem;
+            margin-top: 0.6rem;
+    
+          }
+        }
+      }
+    }
+
+  }
 }
 
 @media (min-width: 800px) {
